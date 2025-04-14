@@ -1,6 +1,6 @@
 <?php
 
-namespace JsonRPCTurboBundle;
+namespace Tourze\JsonRPCTurboBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 

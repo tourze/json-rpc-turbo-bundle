@@ -15,7 +15,7 @@
   },
   "autoload": {
     "psr-4": {
-      "JsonRPCTurboBundle\\": "src"
+      "Tourze\\JsonRPCTurboBundle\\": "src"
     }
   },
   "require-dev": {

@@ -1,6 +1,6 @@
 <?php
 
-namespace JsonRPCTurboBundle\DependencyInjection;
+namespace Tourze\JsonRPCTurboBundle\DependencyInjection;
 
 use Symfony\Component\Config\FileLocator;
 use Symfony\Component\DependencyInjection\ContainerBuilder;

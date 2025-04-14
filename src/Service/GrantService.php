@@ -1,6 +1,6 @@
 <?php
 
-namespace JsonRPCTurboBundle\Service;
+namespace Tourze\JsonRPCTurboBundle\Service;
 
 use Symfony\Bundle\SecurityBundle\Security;
 use Symfony\Component\Security\Http\Attribute\IsGranted;
