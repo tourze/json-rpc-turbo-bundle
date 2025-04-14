@@ -9,9 +9,11 @@
     "symfony/dependency-injection": "^6.4",
     "symfony/http-kernel": "^6.4",
     "symfony/framework-bundle": "^6.4",
-    "symfony/security-bundle": "^6.4",
-    "symfony/security-http": "^6.4",
-    "tourze/json-rpc-core": "0.0.*"
+    "symfony/event-dispatcher": "^6.4",
+    "symfony/validator": "^6.4",
+    "tourze/json-rpc-core": "0.0.*",
+    "psr/container": "^1.1|^2.0",
+    "psr/log": "^3|^2|^1"
   },
   "autoload": {
     "psr-4": {
