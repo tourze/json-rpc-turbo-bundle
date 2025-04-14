@@ -6,3 +6,8 @@ services:
 
   Tourze\JsonRPCTurboBundle\Service\:
     resource: '../../Service/'
+
+  Tourze\JsonRPCTurboBundle\Service\MethodResolver: ~  # 确保这个类是服务
+  Tourze\JsonRPC\Core\Domain\JsonRpcMethodResolverInterface:
+    alias: Tourze\JsonRPCTurboBundle\Service\MethodResolver
+    public: true
