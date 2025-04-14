@@ -10,6 +10,7 @@
     "symfony/http-kernel": "^6.4",
     "symfony/framework-bundle": "^6.4",
     "symfony/security-bundle": "^6.4",
+    "symfony/security-http": "^6.4",
     "tourze/json-rpc-core": "0.0.*"
   },
   "autoload": {
