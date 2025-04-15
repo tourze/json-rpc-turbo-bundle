@@ -4,6 +4,7 @@ namespace Tourze\JsonRPCTurboBundle\Service;
 
 use Psr\Log\LoggerInterface;
 use Psr\SimpleCache\CacheInterface;
+use Symfony\Component\DependencyInjection\Attribute\AsAlias;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Stopwatch\Stopwatch;
 use Symfony\Contracts\EventDispatcher\EventDispatcherInterface;
@@ -21,6 +22,7 @@ use Tourze\JsonRPC\Core\Model\JsonRpcResponse;
 use Tourze\JsonRPCTurboBundle\EventSubscriber\JsonRpcResultListener;
 use Tourze\JsonRPCTurboBundle\Serialization\JsonRpcCallSerializer;
 
+#[AsAlias(EndpointInterface::class)]
 class JsonRpcEndpoint implements ResetInterface, EndpointInterface
 {
     private Stopwatch $stopwatch;
