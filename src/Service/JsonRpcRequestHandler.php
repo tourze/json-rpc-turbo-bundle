@@ -4,6 +4,7 @@ namespace Tourze\JsonRPCTurboBundle\Service;
 
 use Carbon\Carbon;
 use Symfony\Component\EventDispatcher\EventDispatcherInterface;
+use Tourze\JsonRPC\Core\Contracts\RequestHandlerInterface;
 use Tourze\JsonRPC\Core\Domain\JsonRpcMethodInterface;
 use Tourze\JsonRPC\Core\Event\AbstractOnMethodEvent;
 use Tourze\JsonRPC\Core\Event\MethodExecuteFailureEvent;
@@ -16,7 +17,7 @@ use Tourze\JsonRPC\Core\Model\JsonRpcResponse;
 /**
  * Class JsonRpcRequestHandler
  */
-class JsonRpcRequestHandler
+class JsonRpcRequestHandler implements RequestHandlerInterface
 {
     public function __construct(
         private readonly MethodResolver $methodResolver,

@@ -8,6 +8,7 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Stopwatch\Stopwatch;
 use Symfony\Contracts\EventDispatcher\EventDispatcherInterface;
 use Symfony\Contracts\Service\ResetInterface;
+use Tourze\JsonRPC\Core\Contracts\EndpointInterface;
 use Tourze\JsonRPC\Core\Event\BatchSubRequestProcessedEvent;
 use Tourze\JsonRPC\Core\Event\MethodExecutingEvent;
 use Tourze\JsonRPC\Core\Event\OnBatchSubRequestProcessingEvent;
@@ -20,7 +21,7 @@ use Tourze\JsonRPC\Core\Model\JsonRpcResponse;
 use Tourze\JsonRPCTurboBundle\EventSubscriber\JsonRpcResultListener;
 use Tourze\JsonRPCTurboBundle\Serialization\JsonRpcCallSerializer;
 
-class JsonRpcEndpoint implements ResetInterface
+class JsonRpcEndpoint implements ResetInterface, EndpointInterface
 {
     private Stopwatch $stopwatch;
 
