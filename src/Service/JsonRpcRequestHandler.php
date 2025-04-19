@@ -7,7 +7,6 @@ use Symfony\Component\DependencyInjection\Attribute\AsAlias;
 use Symfony\Component\EventDispatcher\EventDispatcherInterface;
 use Tourze\JsonRPC\Core\Contracts\RequestHandlerInterface;
 use Tourze\JsonRPC\Core\Domain\JsonRpcMethodInterface;
-use Tourze\JsonRPC\Core\Event\AbstractOnMethodEvent;
 use Tourze\JsonRPC\Core\Event\MethodExecuteFailureEvent;
 use Tourze\JsonRPC\Core\Event\MethodExecuteSuccessEvent;
 use Tourze\JsonRPC\Core\Exception\JsonRpcInvalidParamsException;
@@ -96,7 +95,7 @@ class JsonRpcRequestHandler implements RequestHandlerInterface
         }
     }
 
-    protected function createResponse(AbstractOnMethodEvent $event): JsonRpcResponse
+    protected function createResponse(MethodExecuteSuccessEvent|MethodExecuteFailureEvent $event): JsonRpcResponse
     {
         if ($event instanceof MethodExecuteSuccessEvent) {
             return $this->responseCreator->createResultResponse($event->getResult(), $event->getJsonRpcRequest());
