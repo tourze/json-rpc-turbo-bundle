@@ -13,7 +13,7 @@
     "symfony/event-dispatcher": "^6.4",
     "symfony/event-dispatcher-contracts": "^2.5 | ^3",
     "symfony/validator": "^6.4",
-    "symfony/service-contracts": "^2.5 || ^3",
+    "symfony/service-contracts": "^3",
     "symfony/stopwatch": "^6.4",
     "tourze/backtrace-helper": "~0.0.5",
     "tourze/json-rpc-core": "^0.0.6",
