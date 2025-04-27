@@ -13,6 +13,7 @@ use Tourze\JsonRPC\Core\Exception\JsonRpcInvalidParamsException;
 use Tourze\JsonRPC\Core\Exception\JsonRpcMethodNotFoundException;
 use Tourze\JsonRPC\Core\Model\JsonRpcRequest;
 use Tourze\JsonRPC\Core\Model\JsonRpcResponse;
+use Tourze\JsonRPCContainerBundle\Service\MethodResolver;
 
 /**
  * Class JsonRpcRequestHandler
