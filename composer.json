@@ -15,7 +15,6 @@
     "symfony/validator": "^6.4",
     "symfony/service-contracts": "^3.5",
     "symfony/stopwatch": "^6.4",
-    "tourze/backtrace-helper": "~0.0.5",
     "tourze/json-rpc-core": "^0.0.6",
     "tourze/json-rpc-container-bundle": "0.0.*",
     "tourze/user-event-bundle": "~0.0.3",
