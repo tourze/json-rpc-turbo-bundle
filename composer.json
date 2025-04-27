@@ -5,23 +5,15 @@
   "license": "MIT",
   "require": {
     "php": "^8.1",
-    "nesbot/carbon": "^2.72 || ^3",
     "symfony/config": "^6.4",
     "symfony/dependency-injection": "^6.4",
     "symfony/http-kernel": "^6.4",
     "symfony/framework-bundle": "^6.4",
-    "symfony/event-dispatcher": "^6.4",
-    "symfony/event-dispatcher-contracts": "^2.5 | ^3",
-    "symfony/validator": "^6.4",
-    "symfony/service-contracts": "^3.5",
     "symfony/stopwatch": "^6.4",
     "tourze/json-rpc-core": "^0.0.6",
     "tourze/json-rpc-container-bundle": "0.0.*",
-    "tourze/user-event-bundle": "~0.0.3",
     "psr/log": "^3|^2|^1",
-    "psr/simple-cache": "^1.0|^2.0|^3.0",
-    "symfony/yaml": "^6.4 || ^7.1",
-    "symfony/polyfill-php83": "^1.31"
+    "symfony/yaml": "^6.4 || ^7.1"
   },
   "autoload": {
     "psr-4": {
