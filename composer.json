@@ -17,6 +17,7 @@
     "symfony/stopwatch": "^6.4",
     "tourze/backtrace-helper": "~0.0.5",
     "tourze/json-rpc-core": "^0.0.6",
+    "tourze/json-rpc-container-bundle": "0.0.*",
     "tourze/user-event-bundle": "~0.0.3",
     "psr/container": "^1.1|^2.0",
     "psr/log": "^3|^2|^1",
